@@ -6,15 +6,17 @@ export default function TodoToday() {
   const TodayBlock = styled.div`
     padding: 48px 42px;
     border-bottom: 1px solid #ced4da;
+    margin-bottom: 12px;
 
     h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 48px;
       font-weight: 600;
+      margin-bottom: 5px;
     }
 
     .day {
-      color: #777;
+      color: #5f3dc4;
       font-size: 48px;
       font-weight: bold;
     }
@@ -40,7 +42,7 @@ export default function TodoToday() {
           <h1>
             {day.getFullYear()}.{day.getMonth() + 1}.{day.getDate()}
           </h1>
-          <div className='task'>남은 일 총 3개</div>
+          <div className='task'>残り3点</div>
         </div>
         <div className='day'>{dayList[day.getDay()]}</div>
       </div>
